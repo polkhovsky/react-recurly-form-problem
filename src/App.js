@@ -23,6 +23,15 @@ class App extends Component {
                 fontWeight: 'bold'
               }
             }
+          },
+          number: {
+            selector: '#recurly-number',
+            style: {
+              fontColor: '#000000',
+              placeholder: {
+                content: 'Credit Card Number'
+              }
+            }
           }
         }
       });
@@ -30,6 +39,18 @@ class App extends Component {
 
   }
 
+  handleFormSubmit(e) {
+    e.preventDefault();
+
+    window.recurly.token(document.querySelector("#recurly_form"), (err, token) => {
+      if (err) {
+        console.error(err);
+      } else {
+        console.info(token);
+      }
+    });
+
+  }
 
   render() {
     return (
