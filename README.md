@@ -1,7 +1,9 @@
 Issue: trying to set up a payment form using Recurly js and React results in large iFrames. Attempting to style fields results in fields not being set up at all.
 
+[Stack Overflow issue](https://stackoverflow.com/questions/44927262/using-recurly-payment-form-with-react-results-in-large-blank-iframes-styling-re)
+
 Steps:
 
-1. Create a basic React app. I used create-react-app
-2. Place `<script src="https://js.recurly.com/v4/recurly.js"></script>` in src/index.html
-3. Set up the form and events in [src/App.js](https://github.com/polkhovsky/react-recurly-form-problem/blob/master/src/App.js)
+1. `git clone git@github.com:polkhovsky/react-recurly-form-problem.git`
+2. `cd react-recurly-form-problem`
+3. `npm install && npm run`
